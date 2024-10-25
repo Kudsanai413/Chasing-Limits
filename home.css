@@ -1,0 +1,155 @@
+/* styles/styles.css */
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+section {
+    margin-bottom: 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+}
+
+
+main
+{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+#mission
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/Pictures/pexels-helen-alp-46790226-12729102.jpg");
+    background-size: 100% 600px;
+    align-items: center;
+}
+
+#mission h2
+{
+    font-size: 38px;
+    color: silver
+}
+
+.heading
+{
+    min-width: 100px;
+    min-height: 50px;
+    width: fit-content;
+    border-style: solid;
+    border-width: 2px;
+    border-color: silver transparent silver transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100% 0;
+}
+
+#goals, #services, #products, #history, #team, #about, #contact
+{
+    align-items: stretch;
+    min-height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    && > #stylish-image
+    {
+        width: 70%;
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+
+        && > img
+        {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+}
+
+
+#goals-sub
+{
+    flex-grow: 1;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#goals-sub p
+{
+    padding: 0px 25px;
+    align-self: stretch;
+    width: 250px;
+    text-align: center;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
+
+#services-list
+{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    list-style:outside;
+    justify-content: space-evenly;
+    && > li
+    {
+        color: silver;
+        font-size: 13px;
+    }
+}
+
+
